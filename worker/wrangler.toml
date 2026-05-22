@@ -1,0 +1,14 @@
+# Cloudflare Worker config for msq-merger-stats.
+# After deploy, the public URL will be:
+#   https://msq-merger-stats.<your-cloudflare-subdomain>.workers.dev
+# Paste that URL into the frontend's .env file (see top-level README).
+
+name = "msq-merger-stats"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# KV namespace. You'll fill in the `id` after running `wrangler kv namespace create STATS`.
+# See the deployment guide for details.
+[[kv_namespaces]]
+binding = "STATS"
+id = "807c83eece0b41fc93aa05236c493514"

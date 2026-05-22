@@ -1,0 +1,15 @@
+{
+  "name": "msq-merger-stats",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Tiny global counter for the MSQ Merger site — Cloudflare Worker + KV.",
+  "scripts": {
+    "dev":    "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail":   "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^3.95.0"
+  }
+}
